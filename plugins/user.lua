@@ -25,8 +25,12 @@ return {
     { import = "astrocommunity.colorscheme.dracula-nvim" },
     { import = "astrocommunity.editing-support.todo-comments-nvim" },
     { import = "astrocommunity.motion.mini-surround" },
+    { import = "astrocommunity.motion.flash-nvim" },
     { import = "astrocommunity.pack.markdown" },
+    { import = "astrocommunity.pack.helm" },
+    { import = "astrocommunity.pack.nix" },
     { import = "astrocommunity.pack.rust" },
+    { import = "astrocommunity.pack.yaml" },
     { import = "astrocommunity.project.nvim-spectre" },
   },
 }
