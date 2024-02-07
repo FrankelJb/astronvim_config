@@ -10,27 +10,39 @@ return {
   --   end,
   -- },
   {
-    "kylechui/nvim-surround",
-    version = "*", -- Use for stability; omit to use `main` branch for the latest features
-    event = "VeryLazy",
-    config = function()
-        require("nvim-surround").setup({
-            -- Configuration here, or leave empty to use defaults
-        })
-    end
-  },
-
-  {
     "AstroNvim/astrocommunity",
+
+    { import = "astrocommunity.code-runner.overseer-nvim" },
+
     { import = "astrocommunity.colorscheme.dracula-nvim" },
-    { import = "astrocommunity.editing-support.todo-comments-nvim" },
-    { import = "astrocommunity.motion.mini-surround" },
     { import = "astrocommunity.motion.flash-nvim" },
-    { import = "astrocommunity.pack.markdown" },
+    { import = "astrocommunity.motion.nvim-surround" },
     { import = "astrocommunity.pack.helm" },
+    { import = "astrocommunity.pack.lua" },
+    { import = "astrocommunity.pack.markdown" },
     { import = "astrocommunity.pack.nix" },
     { import = "astrocommunity.pack.rust" },
     { import = "astrocommunity.pack.yaml" },
+
+    -- Color
+    { import = "astrocommunity.color.ccc-nvim" },
+    { import = "astrocommunity.color.twilight-nvim" },
+
+    -- Diagnostics
+    { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
+    { import = "astrocommunity.diagnostics.trouble-nvim" },
+
+    -- Editing Support
+    { import = "astrocommunity.editing-support.neogen" },
+    { import = "astrocommunity.editing-support.nvim-devdocs" },
+    { import = "astrocommunity.editing-support.nvim-regexplainer" },
+    { import = "astrocommunity.editing-support.refactoring-nvim" },
+    { import = "astrocommunity.editing-support.suda-vim" },
+    { import = "astrocommunity.editing-support.todo-comments-nvim" },
+    { import = "astrocommunity.editing-support.zen-mode-nvim" },
     { import = "astrocommunity.project.nvim-spectre" },
+    { import = "astrocommunity.markdown-and-latex.peek-nvim" },
+
+    -- UI
   },
 }
